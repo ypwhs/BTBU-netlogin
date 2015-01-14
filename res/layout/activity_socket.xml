@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:text="192.168.8.8" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/editText1"
+        android:layout_below="@+id/editText1"
+        android:ems="10"
+        android:text="21098" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editText2"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/editText1"
+        android:onClick="connect"
+        android:text="Connect" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editText2"
+        android:layout_alignBottom="@+id/editText2"
+        android:layout_alignLeft="@+id/button1"
+        android:layout_alignParentRight="true"
+        android:onClick="send"
+        android:text="Send" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/button2"
+        android:ems="10"
+        android:text="1" />
+
+    <Button
+        android:id="@+id/button_1"
+        android:layout_width="180dp"
+        android:layout_height="135dp"
+        android:layout_below="@+id/editText3"
+        android:onClick="cmd1"
+        android:text="登录" />
+
+    <Button
+        android:id="@+id/button_2"
+        android:layout_width="180dp"
+        android:layout_height="135dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/editText3"
+        android:onClick="cmd2"
+        android:text="查流量" />
+
+    <Button
+        android:id="@+id/button_3"
+        android:layout_width="180dp"
+        android:layout_height="135dp"
+        android:layout_below="@+id/button_1"
+        android:onClick="cmd3"
+        android:text="保持在线" />
+
+
+</RelativeLayout>
