@@ -1,6 +1,5 @@
 package com.example.socket;
 
-import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.math.BigInteger;
@@ -359,7 +358,8 @@ public class socket extends Activity {
     	return rec2;
     }
     
-    public boolean connect() {
+	@SuppressWarnings("resource")
+	public boolean connect() {
     	Socket tempsocket;
     	boolean f = false;
     	try{
